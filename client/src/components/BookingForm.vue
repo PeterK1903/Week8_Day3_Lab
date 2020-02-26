@@ -2,9 +2,9 @@
   <form  v-on:submit='handleSubmit'>
     <h2>Add a Booking</h2>
     <label for="name">Name:</label>
-    <input type="text" id="name" v-model="name"/>
+    <input type="text" id="name" v-model="name" required/>
     <label for="email">Email:</label>
-    <input type="text" id="email" v-model="email" />
+    <input type="text" id="email" v-model="email" required/>
     <label for="isCheckedIn">Guest Checked in:</label>
     <input type="radio" id="isCheckedInYes" name="isCheckedIn" v-model="isCheckedIn" value="true">
     <label for="isCheckedInYes">Yes</label>

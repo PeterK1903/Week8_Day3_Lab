@@ -25,10 +25,10 @@ export default {
     eventBus.$on('booking-added', booking => this.bookings.push(booking));
 
     eventBus.$on('booking-deleted', id => {
+      debugger
       const index = this.bookings.findIndex(booking => booking._id === id);
       this.bookings.splice(index, 1);
     })
-
   },
   methods: {
     fetchData(){
